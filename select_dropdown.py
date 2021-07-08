@@ -21,9 +21,9 @@ def select_list():
 
 
 def multi_select_list():
-    cars = driver.find_element(By.ID, "multi-select")
-    car = Select(cars)
-    car.select_by_value("Texas")
+    cities = driver.find_element(By.ID, "multi-select")
+    city = Select(cities)
+    city.select_by_value("Texas")
     driver.find_element(By.ID, "printMe").click()
     time.sleep(3)
     driver.find_element(By.ID, "printAll").click()
