@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_modals.py:34 *************** Test_002_Multiple_Modal *****************
+[32mINFO    [0m root:test_modals.py:36 *************** Test Multiple Modals Case1 Started *****************
+[32mINFO    [0m root:test_modals.py:40 Title of first modal | case1:   First Modal
+[32mINFO    [0m root:test_modals.py:46 Title of second modal | case1:   Modal 2
+[32mINFO    [0m root:test_modals.py:51 *************** Test Multiple Modals Finished *****************

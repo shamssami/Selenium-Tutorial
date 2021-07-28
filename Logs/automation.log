@@ -1,0 +1,112 @@
+2021-07-28 01:26:17,739 - INFO - *************** Test_001_Form *****************
+2021-07-28 01:26:17,739 - INFO - *************** Form Test Started *****************
+2021-07-28 01:26:28,143 - INFO - **** Form Test Passed ****
+2021-07-28 01:42:45,809 - INFO - *************** Test_001_Form *****************
+2021-07-28 01:42:45,810 - INFO - *************** Form Test Started *****************
+2021-07-28 01:44:30,437 - INFO - *************** Test_001_Form *****************
+2021-07-28 01:44:30,437 - INFO - *************** Form Test Started *****************
+2021-07-28 01:47:46,192 - INFO - *************** Test_001_Form *****************
+2021-07-28 01:47:46,192 - INFO - *************** Form Test Started *****************
+2021-07-28 01:47:53,062 - INFO - **** Form Test Passed ****
+2021-07-28 01:48:51,832 - INFO - *************** Test_001_Form *****************
+2021-07-28 01:48:51,833 - INFO - *************** Form Test Started *****************
+2021-07-28 01:48:58,562 - INFO - **** Form Test Passed ****
+2021-07-28 01:57:39,857 - INFO - *************** Test_001_Fill_Form *****************
+2021-07-28 01:57:42,056 - INFO - *************** Fill Form Test Started *****************
+2021-07-28 01:57:49,097 - INFO - **** Fill Form Test Passed ****
+2021-07-28 02:08:52,439 - INFO - *************** Test_001_Single_Modal *****************
+2021-07-28 02:08:54,280 - INFO - *************** Test Single Modal Strarted *****************
+2021-07-28 02:09:06,554 - INFO - *************** Test Single Modal Finished *****************
+2021-07-28 02:09:06,828 - INFO - *************** Test_002_Multiple_Modal *****************
+2021-07-28 02:09:06,829 - INFO - *************** Test Multiple Modals Case1 Started *****************
+2021-07-28 02:09:45,109 - INFO - *************** Test Multiple Modals Finished *****************
+2021-07-28 02:09:45,318 - INFO - *************** Test_003_Multiple_Modal *****************
+2021-07-28 02:09:45,318 - INFO - *************** Test Multiple Modals Case2 Started *****************
+2021-07-28 02:14:39,829 - INFO - *************** Test_001_Single_Modal *****************
+2021-07-28 02:14:41,480 - INFO - *************** Test Single Modal Strarted *****************
+2021-07-28 02:14:47,516 - INFO - *************** Test_002_Multiple_Modal *****************
+2021-07-28 02:14:47,516 - INFO - *************** Test Multiple Modals Case1 Started *****************
+2021-07-28 02:14:54,290 - INFO - *************** Test_003_Multiple_Modal *****************
+2021-07-28 02:14:54,290 - INFO - *************** Test Multiple Modals Case2 Started *****************
+2021-07-28 02:16:54,116 - INFO - *************** Test_001_Single_Modal *****************
+2021-07-28 02:16:55,448 - INFO - *************** Test Single Modal Strarted *****************
+2021-07-28 02:17:00,866 - INFO - Title of single modal:   Modal Title
+2021-07-28 02:17:08,825 - INFO - *************** Test Single Modal Finished *****************
+2021-07-28 02:17:09,098 - INFO - *************** Test_002_Multiple_Modal *****************
+2021-07-28 02:17:09,098 - INFO - *************** Test Multiple Modals Case1 Started *****************
+2021-07-28 02:17:23,569 - INFO - Title of first modal | case1:   First Modal
+2021-07-28 02:17:36,906 - INFO - Title of second modal | case1:   Modal 2
+2021-07-28 02:17:47,613 - INFO - *************** Test Multiple Modals Finished *****************
+2021-07-28 02:17:47,992 - INFO - *************** Test_003_Multiple_Modal *****************
+2021-07-28 02:17:47,992 - INFO - *************** Test Multiple Modals Case2 Started *****************
+2021-07-28 02:18:02,665 - INFO - Title of first modal | case2:   First Modal
+2021-07-28 02:18:16,017 - INFO - Title of Second modal | case2:   Modal 2
+2021-07-28 02:19:56,619 - INFO - *************** Test_001_Single_Modal *****************
+2021-07-28 02:19:58,205 - INFO - *************** Test Single Modal Strarted *****************
+2021-07-28 02:20:03,445 - INFO - Title of single modal:   Modal Title
+2021-07-28 02:20:10,249 - INFO - *************** Test Single Modal Finished *****************
+2021-07-28 02:20:10,521 - INFO - *************** Test_002_Multiple_Modal *****************
+2021-07-28 02:20:10,521 - INFO - *************** Test Multiple Modals Case1 Started *****************
+2021-07-28 02:20:24,942 - INFO - Title of first modal | case1:   First Modal
+2021-07-28 02:20:38,187 - INFO - Title of second modal | case1:   Modal 2
+2021-07-28 02:20:48,859 - INFO - *************** Test Multiple Modals Finished *****************
+2021-07-28 02:20:49,108 - INFO - *************** Test_003_Multiple_Modal *****************
+2021-07-28 02:20:49,108 - INFO - *************** Test Multiple Modals Case2 Started *****************
+2021-07-28 02:21:03,351 - INFO - Title of first modal | case2:   First Modal
+2021-07-28 02:21:16,649 - INFO - Title of Second modal | case2:   Modal 2
+2021-07-28 02:32:22,863 - INFO - *************** Test_001_Progress_Bars *****************
+2021-07-28 02:32:22,864 - INFO - *************** Test Download Dialog Started *****************
+2021-07-28 02:32:31,043 - INFO - The progress label is dispalyed
+2021-07-28 02:32:31,043 - INFO - *************** Test Download Dialog Finished *****************
+2021-07-28 02:32:31,259 - INFO - *************** Test_002_Progress_Bars *****************
+2021-07-28 02:32:31,259 - INFO - *************** Test Download Progress Started *****************
+2021-07-28 02:32:39,250 - INFO - The progress percent is dispalyed
+2021-07-28 02:32:39,250 - INFO - *************** Test Download Progress Finished *****************
+2021-07-28 02:37:21,791 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:37:21,791 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:37:29,651 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:38:48,217 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:38:48,217 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:38:53,783 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:40:08,704 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:40:08,704 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:40:14,267 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:40:30,291 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:40:30,292 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:40:35,663 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:50:03,798 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:50:03,799 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:50:10,580 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:51:00,968 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:51:00,969 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:51:07,395 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:54:27,423 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:54:27,424 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:54:32,844 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:54:33,268 - INFO - *************** Test Table Navigation Buttons Started *****************
+2021-07-28 02:57:17,387 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:57:17,387 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:57:22,964 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:57:23,215 - INFO - *************** Test Table Navigation Buttons Started *****************
+2021-07-28 02:57:23,354 - INFO - *************** Test Table Navigation Buttons  Finished *****************
+2021-07-28 02:57:53,840 - INFO - *************** Test_001_Table_Pagination *****************
+2021-07-28 02:57:53,841 - INFO - *************** Test Table Pagination Started *****************
+2021-07-28 02:57:59,452 - INFO - *************** Test Table Pagination Finished *****************
+2021-07-28 02:57:59,693 - INFO - *************** Test Table Navigation Buttons Started *****************
+2021-07-28 02:57:59,807 - INFO - *************** Test Table Navigation Buttons  Finished *****************
+2021-07-28 03:08:10,157 - INFO - *************** Test_001_Table_Search *****************
+2021-07-28 03:08:10,157 - INFO - *************** Test Table Search Started *****************
+2021-07-28 03:08:24,928 - INFO - *************** Test Table Search  Finished *****************
+2021-07-28 03:08:25,246 - INFO - *************** Test_002_Table_Filter *****************
+2021-07-28 03:08:25,246 - INFO - *************** Test Table Filter Activation Started *****************
+2021-07-28 03:08:30,469 - INFO - Passed, Filter Icon Is Disabled
+2021-07-28 03:08:30,469 - INFO - Passed, Filter Icon Is Enabled
+2021-07-28 03:08:30,727 - INFO - *************** Test Table Filter Activation Buttons  Finished *****************
+2021-07-28 03:08:53,707 - INFO - *************** Test_001_Table_Search *****************
+2021-07-28 03:08:53,707 - INFO - *************** Test Table Search Started *****************
+2021-07-28 03:09:07,807 - INFO - *************** Test Table Search  Finished *****************
+2021-07-28 03:09:08,105 - INFO - *************** Test_002_Table_Filter *****************
+2021-07-28 03:09:08,105 - INFO - *************** Test Table Filter Activation Started *****************
+2021-07-28 03:09:13,313 - INFO - Passed, Filter Icon Is Disabled
+2021-07-28 03:09:13,313 - INFO - Passed, Filter Icon Is Enabled
+2021-07-28 03:09:13,313 - INFO - *************** Test Table Filter Activation Buttons  Finished *****************

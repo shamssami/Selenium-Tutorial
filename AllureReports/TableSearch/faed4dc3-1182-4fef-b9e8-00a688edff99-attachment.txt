@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_table_search.py:46 *************** Test_002_Table_Filter *****************
+[32mINFO    [0m root:test_table_search.py:48 *************** Test Table Filter Activation Started *****************
+[32mINFO    [0m root:test_table_search.py:59 Passed, Filter Icon Is Disabled
+[32mINFO    [0m root:test_table_search.py:66 Passed, Filter Icon Is Enabled
+[32mINFO    [0m root:test_table_search.py:71 *************** Test Table Filter Activation Buttons  Finished *****************

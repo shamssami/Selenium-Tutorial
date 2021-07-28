@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_table_pagination.py:41 *************** Test Table Pagination Finished *****************

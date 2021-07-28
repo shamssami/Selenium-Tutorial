@@ -1,17 +1,27 @@
+import logging
+
+import allure
+from allure_commons.types import AttachmentType
+from selenium import webdriver
+
 from Pages.table_pagination import TablePagination
+from Utils.Logger import Logging
 from Utils.locators import TablePaginationLocators
 
-import setup
 import time
 
-
+@allure.severity(allure.severity_level.NORMAL)
 class TestTablePagination:
-    driver = setup.setup()
+    logger = Logging.loggen()
+    driver = webdriver.Chrome(executable_path="C:\\selenium\\chromedriver_win32\\chromedriver.exe")
     obj = TablePagination(driver)
 
+    @allure.severity(allure.severity_level.BLOCKER)
     def test_table_pagination(self):
-        # open the driver
-        # get the web page
+        self.logger.info("*************** Test_001_Table_Pagination *****************")
+
+        self.logger.info("*************** Test Table Pagination Started *****************")
+
         self.obj.open(TablePaginationLocators.TablePaginationUrl)
         time.sleep(3)
         # test form
@@ -25,14 +35,20 @@ class TestTablePagination:
         print("Records Number in Page 2 is ", page2_rows)
         print("Records Number in Page 3 is ", page3_rows)
 
+        self.logger.info("*************** Test Table Pagination Finished *****************")
+        self.driver.save_screenshot(".\\screenshots\\" + "table_pagination.png")
+        allure.attach(self.driver.get_screenshot_as_png(), name="tabel_pagination", attachment_type=AttachmentType.PNG)
+
+    @allure.severity(allure.severity_level.BLOCKER)
     def test_navigation_buttons(self):
+        self.logger.info("*************** Test Table Navigation Buttons Started *****************")
+
         self.obj.navigate_buttons()
 
-        # close browser
-        setup.close()
+        self.logger.info("*************** Test Table Navigation Buttons  Finished *****************")
+        self.driver.save_screenshot(".\\screenshots\\" + "table_navigation_buttons.png")
+        allure.attach(self.driver.get_screenshot_as_png(), name="table_navigation_buttons", attachment_type=AttachmentType.PNG)
+        self.driver.close()
 
-
-# automate this testm,,,,,,
-test = TestTablePagination()
-test.test_table_pagination()
-test.test_navigation_buttons()
+    # pytest -v -s --alluredir=".\AllureReports\TablePagination" Tests\test_table_pagination.py
+    # pytest -v --html=PytestReports\table_pagination_report.html Tests\test_table_pagination.py

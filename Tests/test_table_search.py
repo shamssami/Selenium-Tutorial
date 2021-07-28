@@ -1,17 +1,26 @@
+import allure
+from allure_commons.types import AttachmentType
+from selenium import webdriver
+
 from Pages.table_filter_search import TableSearch
+from Utils.Logger import Logging
 from Utils.locators import TableSearchLocators
 from Utils.test_data import TableSearchData
-import setup
 import time
 
 
+@allure.severity(allure.severity_level.NORMAL)
 class TestTableSearch:
-    driver = setup.setup()
+    logger = Logging.loggen()
+    driver = webdriver.Chrome(executable_path="C:\\selenium\\chromedriver_win32\\chromedriver.exe")
     obj = TableSearch(driver)
 
+    @allure.severity(allure.severity_level.BLOCKER)
     def test_table_search(self):
-        # open the driver
-        # get the web page
+        self.logger.info("*************** Test_001_Table_Search *****************")
+
+        self.logger.info("*************** Test Table Search Started *****************")
+
         self.obj.open(TableSearchLocators.TableSearchUrl)
         time.sleep(3)
         # test form
@@ -28,34 +37,42 @@ class TestTableSearch:
         self.obj.clear_text_field()
 
         time.sleep(3)
+        self.logger.info("*************** Test Table Search  Finished *****************")
+        self.driver.save_screenshot(".\\screenshots\\" + "table_search.png")
+        allure.attach(self.driver.get_screenshot_as_png(), name="table_search", attachment_type=AttachmentType.PNG)
 
-        # close browser
-
+    @allure.severity(allure.severity_level.BLOCKER)
     def test_table_filter(self):
-        # open the driver
-        # get the web page
+        self.logger.info("*************** Test_002_Table_Filter *****************")
+
+        self.logger.info("*************** Test Table Filter Activation Started *****************")
+
         time.sleep(3)
-        # test form
+        # check filter icon activation
         disabled_value = self.obj.is_enabled_filter()
         self.obj.click_filter_button()
         enabled_value = self.obj.is_enabled_filter()
         time.sleep(2)
 
+        # filter table should be disabled before clicking on filter icon
         if disabled_value is False:
-            print("Test Passed")
+            self.logger.info("Passed, Filter Icon Is Disabled")
         else:
-            print("Test Fail, The field should be disabled")
+            self.logger.error("Test Failed, The field should be disabled")
+
+        # filter table should be enabled after clicking on filter icon
 
         if enabled_value is True:
-            print("Test Passed")
+            self.logger.info("Passed, Filter Icon Is Enabled")
         else:
-            print("Test Failed, The field should be enabled")
+            self.logger.error("Test Failed, The field should be enabled")
 
         # close browser
+        self.logger.info("*************** Test Table Filter Activation Buttons  Finished *****************")
+        self.driver.save_screenshot(".\\screenshots\\" + "table_filter.png")
+        allure.attach(self.driver.get_screenshot_as_png(), name="table_filter",
+                      attachment_type=AttachmentType.PNG)
         self.driver.close()
 
-
-# automate this test
-test = TestTableSearch()
-test.test_table_search()
-test.test_table_filter()
+    # pytest -v -s --alluredir=".\AllureReports\TableSearch" Tests\test_table_search.py
+    # pytest -v --html=PytestReports\table_search.html Tests\test_table_search.py

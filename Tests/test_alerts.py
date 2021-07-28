@@ -2,12 +2,12 @@ from selenium import webdriver
 
 from Pages.alerts import Alerts
 from Utils.locators import AlertsLocators
-import setup
+import conftest
 import time
 
 
 class TestAlerts:
-    driver =setup.setup()
+    driver =conftest.setup()
     obj = Alerts(driver)
 
     def test_autoclosable_alerts(self):

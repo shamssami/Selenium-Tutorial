@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_table_pagination.py:43 *************** Test Table Navigation Buttons Started *****************

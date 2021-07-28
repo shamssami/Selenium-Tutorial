@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_modals.py:19 *************** Test_001_Single_Modal *****************
+[32mINFO    [0m root:test_modals.py:22 *************** Test Single Modal Strarted *****************
+[32mINFO    [0m root:test_modals.py:25 Title of single modal:   Modal Title
+[32mINFO    [0m root:test_modals.py:28 *************** Test Single Modal Finished *****************

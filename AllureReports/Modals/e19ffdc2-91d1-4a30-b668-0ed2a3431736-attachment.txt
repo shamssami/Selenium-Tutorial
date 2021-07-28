@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_modals.py:19 *************** Test_001_Single_Modal *****************
+[32mINFO    [0m root:test_modals.py:22 *************** Test Single Modal Strarted *****************

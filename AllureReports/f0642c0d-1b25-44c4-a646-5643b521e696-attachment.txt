@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_basic_form.py:22 *************** Test_001_Form *****************
+[32mINFO    [0m root:test_basic_form.py:23 *************** Form Test Started *****************
+[32mINFO    [0m root:test_basic_form.py:32 **** Form Test Passed ****

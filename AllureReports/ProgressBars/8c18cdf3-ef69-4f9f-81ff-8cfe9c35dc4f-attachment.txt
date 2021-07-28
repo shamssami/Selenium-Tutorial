@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_progress_bars.py:37 *************** Test_002_Progress_Bars *****************
+[32mINFO    [0m root:test_progress_bars.py:38 *************** Test Download Progress Started *****************
+[32mINFO    [0m root:test_progress_bars.py:44 The progress percent is dispalyed
+[32mINFO    [0m root:test_progress_bars.py:46 *************** Test Download Progress Finished *****************

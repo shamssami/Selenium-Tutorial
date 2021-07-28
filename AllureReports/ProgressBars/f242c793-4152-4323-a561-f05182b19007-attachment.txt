@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_progress_bars.py:19 *************** Test_001_Progress_Bars *****************
+[32mINFO    [0m root:test_progress_bars.py:20 *************** Test Download Dialog Started *****************
+[32mINFO    [0m root:test_progress_bars.py:28 The progress label is dispalyed
+[32mINFO    [0m root:test_progress_bars.py:30 *************** Test Download Dialog Finished *****************
