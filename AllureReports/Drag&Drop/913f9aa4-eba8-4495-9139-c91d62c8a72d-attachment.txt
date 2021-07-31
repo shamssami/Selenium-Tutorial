@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_drag_drop.py:17 *************** Test_001_Drag And Drop *****************
+[32mINFO    [0m root:test_drag_drop.py:18 *************** Drag & Drop Test Started *****************
+[32mINFO    [0m root:test_drag_drop.py:24 **** Drag & Drop Test Passed ****

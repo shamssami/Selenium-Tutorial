@@ -113,3 +113,15 @@ class ListBoxLocators(object):
 class ListFilterLocators(object):
     ListFilterUrl = 'https://www.seleniumeasy.com/test/data-list-filter-demo.html'
     input_search = (By.XPATH, '//*[@id="input-search"]')
+
+
+class LoadingDataLocators(object):
+    LoadDataUrl = 'https://www.seleniumeasy.com/test/dynamic-data-loading-demo.html'
+    get_user_button = (By.XPATH, '//*[@id="save"]')
+    loading_image = (By.XPATH, '//*[@id="loading"]/img')
+
+
+class DragDropLocators(object):
+    DragDropUrl = 'https://www.seleniumeasy.com/test/drag-and-drop-demo.html'
+    item_to_drag = (By.XPATH, '//*[@id="todrag"]/span[1]')
+    target = (By.XPATH, '//*[@id="mydropzone"]')

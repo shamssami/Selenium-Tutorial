@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_loading_data.py:21 *************** Test_001_Loading Data *****************
+[32mINFO    [0m root:test_loading_data.py:24 *************** Loading Data Test Started *****************
+[32mINFO    [0m root:test_loading_data.py:34 **** Loading Data Test Passed ****
