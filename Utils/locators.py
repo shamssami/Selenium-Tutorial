@@ -94,6 +94,22 @@ class ModalsLocators(object):
     launch_multi_modal_button2 = (By.XPATH, '//*[@id="myModal"]/div/div/div[3]/a')
     save_changes_modal2_button = (By.XPATH, '//*[@id="myModal2"]/div/div/div[6]/a[2]')
     close_modal2_button = (By.XPATH, '//*[@id="myModal2"]/div/div/div[6]/a[1]')
-    save_changes_modal1_button =(By.XPATH, '//*[@id="myModal"]/div/div/div[4]/a[2]')
+    save_changes_modal1_button = (By.XPATH, '//*[@id="myModal"]/div/div/div[4]/a[2]')
     first_modal_title = (By.XPATH, '//*[@id="myModal"]/div/div/div[1]/h4')
-    second_modal_title =(By.XPATH, '//*[@id="myModal2"]/div/div/div[1]/h4')
+    second_modal_title = (By.XPATH, '//*[@id="myModal2"]/div/div/div[1]/h4')
+
+
+class ListBoxLocators(object):
+    ListBoxUrl = 'https://www.seleniumeasy.com/test/jquery-dual-list-box-demo.html'
+    list1_selections = (By.XPATH, '//*[@id="pickList"]/div/div[1]/select')
+    list2_selections = (By.XPATH, '//*[@id="pickList"]/div/div[3]/select')
+
+    add_button = (By.XPATH, '//*[@id="pickList"]/div/div[2]/button[1]')
+    removeAll_button = (By.XPATH, '//*[@id="pickList"]/div/div[2]/button[4]')
+    addAll_button = (By.XPATH, '//*[@id="pickList"]/div/div[2]/button[2]')
+    remove_button = (By.XPATH, '//*[@id="pickList"]/div/div[2]/button[3]')
+
+
+class ListFilterLocators(object):
+    ListFilterUrl = 'https://www.seleniumeasy.com/test/data-list-filter-demo.html'
+    input_search = (By.XPATH, '//*[@id="input-search"]')

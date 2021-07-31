@@ -1,18 +1,19 @@
 from selenium import webdriver
 
 from Pages.alerts import Alerts
+from Utils.Logger import Logging
 from Utils.locators import AlertsLocators
-import conftest
 import time
 
 
 class TestAlerts:
-    driver =conftest.setup()
-    obj = Alerts(driver)
+    logger = Logging.loggen()
 
-    def test_autoclosable_alerts(self):
-        self.obj.open(AlertsLocators.AlertsUrl)
+    def test_autoclosable_alerts(self, test_setup):
+        self.driver = test_setup
+        self.driver.get(AlertsLocators.AlertsUrl)
         time.sleep(5)
+        self.obj = Alerts(self.driver)
         self.obj.click_autoclosable_buttons()
         # check if autoclosable buttons are displayed
         status1 = self.obj.is_success_message_displayed()
@@ -34,7 +35,5 @@ class TestAlerts:
         print("Normal Alerts test Pass")
         self.driver.close()
 
-
-test = TestAlerts()
-test.test_autoclosable_alerts()
-test.test_normal_alerts()
+# pytest -v -s --alluredir=".\AllureReports" Tests\test_basic_form.py
+# pytest -v --html=PytestReports\alerts_report.html Tests\test_alerts.py

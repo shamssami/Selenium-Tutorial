@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_list_box.py:56 *************** Test_001_List_Box *****************
+[32mINFO    [0m root:test_list_box.py:59 *************** List Box Test Started *****************
+[32mINFO    [0m root:test_list_box.py:75 **** List Box Test Passed ****

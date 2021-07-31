@@ -1,13 +1,18 @@
 from selenium import webdriver
 import pytest
 
+driver = webdriver.Chrome(executable_path="C:\\selenium\\chromedriver_win32\\chromedriver.exe")
+
 
 @pytest.fixture()
 def test_setup():
-    driver = webdriver.Chrome(executable_path="C:\\selenium\\chromedriver_win32\\chromedriver.exe")
     driver.implicitly_wait(5)
     driver.maximize_window()
     return driver
+
+@pytest.fixture()
+def test_close():
+    driver.close()
 
 
 ########### pytest HTML Report ################

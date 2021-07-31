@@ -1,4 +1,3 @@
-from selenium import webdriver
 
 from Pages.basic_forms_page import BasicForm
 from Utils.locators import FormPageLocators
@@ -13,27 +12,30 @@ from allure_commons.types import AttachmentType
 @allure.severity(allure.severity_level.NORMAL)
 class Test_Form:
     logger = Logging.loggen()
-    driver = webdriver.Chrome(executable_path="C:\\selenium\\chromedriver_win32\\chromedriver.exe")
 
+    ##################
     @allure.severity(allure.severity_level.BLOCKER)
-    def test_form(self):
-        self.driver.implicitly_wait(5)
-        self.driver.maximize_window()
-        self.logger.info("*************** Test_001_Form *****************")
+    def test_input_form(self, test_setup):
+        self.logger.info("*************** Test_001_Calculation *****************")
         self.logger.info("*************** Form Test Started *****************")
-        # open the driver
-        obj = BasicForm(self.driver)
-        # get the web page
-        obj.open(FormPageLocators.FormUrl)
-        time.sleep(3)
-        # test form
-        obj.input_numbers(Data.get_valid_number1(), Data.get_valid_number2())
-        obj.click_total_button()
+        self.driver = test_setup
+        self.driver.get(FormPageLocators.FormUrl)
+        self.obj = BasicForm(self.driver)
+        self.obj.input_numbers(Data.get_valid_number1(), Data.get_valid_number2())
+        time.sleep(2)
+
+        self.obj.click_total_button()
         self.logger.info("**** Form Test Passed ****")
 
         time.sleep(3)
+
         self.driver.save_screenshot(".\\Screenshots\\" + "test_form.png")
         allure.attach(self.driver.get_screenshot_as_png(), name="testForm", attachment_type=AttachmentType.PNG)
         # close browser
 
-#pytest -v -s --alluredir=".\AllureReports" Tests\test_basic_form.py
+        self.driver.close()
+
+
+
+# pytest -v -s --alluredir=".\AllureReports" Tests\test_basic_form.py
+# pytest -v --html=PytestReports\basic_form_report.html Tests\test_basic_form.py

@@ -89,3 +89,31 @@ class TableSearchData:
     def get_status():
         return TableSearchData.status
 
+
+
+class ListFilterData:
+    name = 'Arman Cheyia'
+    title = 'Manager'
+    phone_no = '321-456-1111'
+    email = 'test4@company.com'
+    notExist_data = 'Software Engineering'
+
+    @staticmethod
+    def get_name():
+        return ListFilterData.name
+
+    @staticmethod
+    def get_title():
+        return ListFilterData.title
+
+    @staticmethod
+    def get_phone_no():
+        return ListFilterData.phone_no
+
+    @staticmethod
+    def get_email():
+        return ListFilterData.email
+
+    @staticmethod
+    def get_not_exist_data():
+        return ListFilterData.notExist_data
